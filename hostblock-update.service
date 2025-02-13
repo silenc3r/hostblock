@@ -1,0 +1,7 @@
+[Unit]
+Description=Update custom hosts file
+Requires=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=hostblock -u

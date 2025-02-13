@@ -1,0 +1,12 @@
+[Unit]
+Description=Update custom hosts file
+Wants=network-online.target
+
+[Timer]
+OnCalendar=weekly
+AccuracySec=1h
+RandomizedDelaySec=2h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
